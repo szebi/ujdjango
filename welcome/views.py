@@ -25,4 +25,4 @@ def health(request):
 
 
 def hello(request):
-    return HttpResponse("Hello, world.")
+    return HttpResponse("Hello, world. Hello, Django.")
