@@ -2,7 +2,7 @@ from django.conf import settings
 from django.conf.urls import include, url
 from django.contrib import admin
 
-from welcome.views import index, health
+from welcome.views import index, health, hello
 
 urlpatterns = [
     # Examples:
@@ -11,6 +11,7 @@ urlpatterns = [
 
     url(r'^$', index),
     url(r'^health$', health),
+    url(r'^hello$', hello),
     url(r'^admin/', include(admin.site.urls)),
 ]
 
